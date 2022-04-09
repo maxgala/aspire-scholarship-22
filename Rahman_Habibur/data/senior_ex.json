@@ -1,0 +1,56 @@
+[
+    {
+        "_last_name": "Bartlett",
+        "_first_name": "Mccormick",
+        "_industry": "IT Supplies",
+        "_interests": [
+            "Golf"
+        ],
+        "_frequency": "Weekly"
+    },
+    {
+        "_last_name": "Hernandez",
+        "_first_name": "Mccormick",
+        "_industry": "Wholesale",
+        "_interests": [
+            "Cricket"
+        ],
+        "_frequency": "Monthly"
+    },
+    {
+        "_last_name": "Robinson",
+        "_first_name": "Harvey",
+        "_industry": "Software",
+        "_interests": [
+            "Volleyball"
+        ],
+        "_frequency": "Weekly"
+    },
+    {
+        "_last_name": "Random",
+        "_first_name": "Random",
+        "_industry": "IT Supplies",
+        "_interests": [
+            "Cricket"
+        ],
+        "_frequency": "Weekly"
+    },
+    {
+        "_last_name": "Random",
+        "_first_name": "Hernandez",
+        "_industry": "IT Supplies",
+        "_interests": [
+            "Cricket"
+        ],
+        "_frequency": "Weekly"
+    },
+    {
+        "_last_name": "Husna",
+        "_first_name": "Asmaul",
+        "_industry": "Agriculture",
+        "_interests": [
+            "Football"
+        ],
+        "_frequency": "Weekly"
+    }
+]
