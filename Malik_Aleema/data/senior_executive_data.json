@@ -1,0 +1,91 @@
+[{
+    "id": 1,
+    "first_name": "Saba",
+    "last_name": "Alrobayi",
+    "industry": "Health Care",
+    "max_coffee_chats": 2,
+    "interests": [
+      "Career Development",
+      "Presentation Skills"
+    ]
+  }, {
+    "id": 2,
+    "first_name": "Aqsa",
+    "last_name": "Malik",
+    "industry": "Engineering",
+    "max_coffee_chats": 1,
+    "interests": [
+      "Interviewing Skills",
+      "Career Development"
+    ]
+  }, {
+    "id": 3,
+    "first_name": "Abdullah",
+    "last_name": "Malik",
+    "industry": "Finance",
+    "max_coffee_chats": 2,
+    "interests": [
+      "Career Development",
+      "Writing Skills"
+    ]
+    }, {
+    "id": 4,
+    "first_name": "Simon",
+    "last_name": "Gwin",
+    "industry": "Business",
+    "max_coffee_chats": 2,
+    "interests": [
+      "Interviewing Skills",
+      "Career Development"
+    ]
+  }, {
+    "id": 5,
+    "first_name": "Alphard",
+    "last_name": "Skellern",
+    "industry": "Engineering",
+    "max_coffee_chats": 1,
+    "interests": [
+      "Career Development",
+      "Behavioural Skills"
+    ]
+  }, {
+    "id": 6,
+    "first_name": "Roda",
+    "last_name": "Liptrot",
+    "industry": "Finance",
+    "max_coffee_chats": 2,
+    "interests": [
+      "Learning Strategies",
+      "Interviewing Skills"
+    ]
+  }, {
+    "id": 7,
+    "first_name": "Imaan",
+    "last_name": "Khan",
+    "industry": "Business",
+    "max_coffee_chats": 2,
+    "interests": [
+      "Behavioural Skills",
+      "Communication Skills"
+    ]
+  }, {
+    "id": 8,
+    "first_name": "Alexandros",
+    "last_name": "Hebditch",
+    "industry": "Consulting",
+    "max_coffee_chats": 2,
+    "interests": [
+      "Communication Skills",
+      "Writing Skills"
+    ]
+  }, {
+    "id": 9,
+    "first_name": "Brennan",
+    "last_name": "Bellin",
+    "industry": "Journalism",
+    "max_coffee_chats": 2,
+    "interests": [
+      "Behavioural Skills",
+      "Writing Skills"
+    ]
+}]

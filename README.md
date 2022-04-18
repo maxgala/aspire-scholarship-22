@@ -1,1 +1,0 @@
-# aspire-scholarship-22
