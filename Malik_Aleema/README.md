@@ -4,6 +4,7 @@ PROBLEM
 You must Implement an intelligent algorithm in Python which shows, on a weekly basis, a list of coffee chats for every Aspiring Professional on the Platform. The curated list must take into account, among other factors, facts like the industry of the Aspiring Professional, industry of Senior Executives on the Platform, interests of the Aspiring Professional (as determined by activity on the Platform), frequency at which each Senior Executive has already been appearing on the roster, etc. A full solution will include the code, automated test cases and documentation of how the algorithm works. The algorithm should run as a separate, stand-alone process.
 
 SOLUTION
+
 Algorithm Signature:
 MAX_algorithm(senior_executives_list,aspiring_professionals_list)
 senior_executives_list: All the Senior Executives on the platform
