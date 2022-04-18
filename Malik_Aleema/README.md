@@ -81,9 +81,7 @@ This step requires you to iterate through the AP's sorted matches and set up cof
 Future Goals:
 - Allow AP's to rank SE's after Coffee Chats. Instead of just sorting by the number of common Interets, SE's can be moved up or down in the list depending on an AP's rank
 - Add a 'Hobbies' section to SE and AP to better the matching algorithm
-- Implement a UI for this Platform
 - Increase speed of algorithm by optimzing parts of the algorithm that have a time complexity of O(N^2) 
-- Implement a database instead of JSON 
 
 STEPS TO RUN
 1) In the src folder run setup.py
@@ -95,12 +93,45 @@ pip install pytest
 3) In the src folder run main.py
 $ python .\main.py
 
-If you didn't make any changes you should see the following table:
+If you didn't make any changes you should see the following tables:
+
+Table 1
+-------------------------------------------------------------------
+----------------- Getting This Weeks Coffee Chats -----------------
+-------------------------------------------------------------------
+
+Date        Aspiring Professional    Senior Executive    Location
+----------  -----------------------  ------------------  ----------
+04/20/2022  Aleema Malik             Aqsa Malik          Online
+04/20/2022  John Doe                 Imaan Khan          Online
+04/19/2022  John Doe                 Simon Gwin          Online
+04/18/2022  Irsah Rasheed            Saba Alrobayi       Online
+04/22/2022  Aguste Mangeney          Abdullah Malik      Online
+04/23/2022  Aguste Mangeney          Roda Liptrot        Online
+04/24/2022  Saad Rasheed             Saba Alrobayi       Online
+04/21/2022  Maaz Mangeney            Alphard Skellern    Online
+
+Table 2
+--------------------------------------------------------------------
+---------- Getting This Weeks Senior Executive Statistics ----------
+--------------------------------------------------------------------
+
+First Name    Last Name    Industry       Frequency    Coffee Chats
+------------  -----------  -----------  -----------  --------------
+Saba          Alrobayi     Health Care            2               2
+Aqsa          Malik        Engineering            3               1
+Abdullah      Malik        Finance                1               1
+Simon         Gwin         Business               1               1
+Alphard       Skellern     Engineering            3               1
+Roda          Liptrot      Finance                1               1
+Imaan         Khan         Business               1               1
+Alexandros    Hebditch     Consulting             0               0
+Brennan       Bellin       Journalism             0               0
 
 4) In the tests folder run tests.py to see all the tests
 $ pytest .\tests.py 
 
-If you didn't make any chagnes you should see the following:
+If you didn't make any changes you should see the following:
 ====================================================================== test session starts =======================================================================
 platform win32 -- Python 3.7.2, pytest-7.1.1, pluggy-1.0.0
 rootdir: C:\Users\aleem\OneDrive\Desktop\MAX\tests
