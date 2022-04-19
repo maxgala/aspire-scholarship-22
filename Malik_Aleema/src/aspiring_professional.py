@@ -4,7 +4,6 @@ class AspiringProfessional(Member):
     def __init__(self, id, first_name, last_name, industry, interests=[]):
         super().__init__(id, first_name, last_name, industry, interests)
         self.matches = {}
-        self.num_coffee_chats = 0
         self.past_matches = []
 
     def get_matches(self):

@@ -7,6 +7,7 @@ class Member:
         self.last_name = last_name
         self.industry = industry
         self.interests = interests
+        self.num_coffee_chats = 0
 
     def get_id(self):
         return self.id

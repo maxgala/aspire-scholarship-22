@@ -5,7 +5,6 @@ class SeniorExecutive(Member):
         super().__init__(id, first_name, last_name, industry, interests)
         self.frequency = 0
         self.max_coffee_chats = max_coffee_chats
-        self.num_coffee_chats = 0
     
     def get_frequency(self):
         return self.frequency
