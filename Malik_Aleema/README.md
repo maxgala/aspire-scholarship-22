@@ -84,13 +84,13 @@ Future Goals:
 - Add a 'Hobbies' section to SE and AP to better the matching algorithm
 - Increase speed of algorithm by optimzing parts of the algorithm that have a time complexity of O(N^2) 
 
-STEPS TO RUN
-1) In the src folder run setup.py
+STEPS TO RUN 
+1) In the "/src" folder run setup.py
 $  python .\setup.py
 The setup installs the following packages:
 pip install tabulate
 pip install pytest
-2) In the data folder you can view the mock AP's and SE's on the platform in aspiring_professional_data.json and senior_executive_data.json respectively
+2) In the "/data" folder you can view the mock AP's and SE's on the platform in aspiring_professional_data.json and senior_executive_data.json respectively
 3) In the src folder run main.py
 $ python .\main.py
 
@@ -128,6 +128,21 @@ Roda          Liptrot      Finance                1               1
 Imaan         Khan         Business               1               1
 Alexandros    Hebditch     Consulting             0               0
 Brennan       Bellin       Journalism             0               0
+
+STEPS TO RUN ALGORITHM
+If you want to add your own Senior Executive and Aspiring Professionals declare a new objective:
+# In main.py (Malik_Aleema\src\main.py) create as many as Senior Executives and add them  to a list : (Malik_Aleema\src\senior_executive.py)
+senior_executive_list = []
+new_senior_executive = SeniorExecutive(2, 'Faheema', 'Abid', 'Finance', 1, ['interest1', 'interest2'])
+senior_executive_list.append(new_senior_executive)
+# Create as many as Aspiring Professionals and add them  to a list : (Malik_Aleema\src\aspiring_professional.py)
+aspiring_professionals_list = []
+new_aspiring_professionals = AspiringProfessional(1, 'Aleema', 'Malik', 'Consulting', ['interest1', 'interest2', 'interest3'])
+aspiring_professionals_list.append(new_aspiring_professionals)
+# Run the algorithm. It will return a coffee chat object : (Malik_Aleema\src\coffee_chat.py)
+coffee_chats = MAX_algorithm(senior_executive_list,aspiring_professionals_list)
+# To see the contents of the coffee_chat to command line you can use the following method
+print_coffee_chats(coffee_chats,senior_executives_list, aspiring_professionals_list)
 
 4) In the tests folder run tests.py to see all the tests
 $ pytest .\tests.py 
