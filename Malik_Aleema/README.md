@@ -1,22 +1,42 @@
 # aspire-scholarship-22
-PROBLEM
+
+
+Table of contents
+=================
+
+<!--ts-->
+   * [Problem](#problem)
+   * [Solution](#solution)
+      * [Algorithm Signature](#algorithm-signature)
+      * [Algorithm Output](#algorithm-output)
+      * [Algorithm Details](#algorithm-details)
+   * [Running the Code](#running-the-code)
+     * [Running Without Changing](#running-without-changing)
+     * [Running With Changing](#running-with-changing)
+   * [Testing](#testing)
+<!--te-->
+
+Problem
+=================
 
 You must Implement an intelligent algorithm in Python which shows, on a weekly basis, a list of coffee chats for every Aspiring Professional on the Platform. The curated list must take into account, among other factors, facts like the industry of the Aspiring Professional, industry of Senior Executives on the Platform, interests of the Aspiring Professional (as determined by activity on the Platform), frequency at which each Senior Executive has already been appearing on the roster, etc. A full solution will include the code, automated test cases and documentation of how the algorithm works. The algorithm should run as a separate, stand-alone process.
 
-SOLUTION
+Solution
+=================
 
-Algorithm Signature:
-MAX_algorithm(senior_executives_list,aspiring_professionals_list)
-senior_executives_list: All the Senior Executives on the platform
-aspiring_professionals_list: All the Aspiring Professionals on the platform
+## Algorithm Signature:
+MAX_algorithm(senior_executives_list,aspiring_professionals_list):  
+senior_executives_list: All the Senior Executives on the platform.    
+aspiring_professionals_list: All the Aspiring Professionals on the platform.     
 
 
-Algorithm Output:
+## Algorithm Output:
 2 Tables are ouputted to display data from the Algorithm
 Table 1 displays the coffee chats for every Aspiring Professional on the Platform for the current week.
 Table 2 outputs a Senior Executives statistcs for the week. It outlines how many times a Senior Executive appeared on the roster as well as how many coffee chats they've been scheduled for, for the week.
 
 Table 1
+```
 -------------------------------------------------------------------
 ----------------- Getting This Weeks Coffee Chats -----------------
 -------------------------------------------------------------------
@@ -32,7 +52,9 @@ Date        Aspiring Professional    Senior Executive    Location
 04/24/2022  Saad Rasheed             Saba Alrobayi       Online
 04/21/2022  Maaz Mangeney            Alphard Skellern    Online
 
+```
 Table 2
+```
 --------------------------------------------------------------------
 ---------- Getting This Weeks Senior Executive Statistics ----------
 --------------------------------------------------------------------
@@ -48,10 +70,12 @@ Roda          Liptrot      Finance                1               1
 Imaan         Khan         Business               1               1
 Alexandros    Hebditch     Consulting             0               0
 Brennan       Bellin       Journalism             0               0
+```
 
-Algorithm Details:
-
-Before proceeding, take a look at the Solutions_Architecture.pdf 
+## Algorithm Details:
+```diff
+- Before proceeding, take a look at the Solutions_Architecture.pdf in the root folder
+```
 
 Assumptions/Implications:
 - Frequency a Senior Executive (SE) appears on the roster indicates each time they are matched with an Aspiring Professional (AP). This means, even if an SE did not get a coffee chat with an AP for the week, their freqeuency increments. This could be helpful in determining the distribution of your AP's and can help in figuring out what other SE's should be scouted. 
@@ -61,7 +85,7 @@ EX: SE1 frequency is 3 (Matched with AP1, AP2 and AP3) but this week only got a 
 - An AP's Interets include things they are interested in gaining from an SE's 
 - An SE's Interets include what they are interested in helping AP's with
 
-Algorithm
+Algorithm:      
 The algorithm goes through the following 3 steps in order to intellgiently output a list of coffee chats for every Aspiring Professional on the Platform
 Step 1: Industry Match
 Match Senior Executives (SE) with Aspiring Profssionals (AP) based on common Industry. This is because, from my experience with MAX, one of the goals is to connect aspiring individuals with senior executives
@@ -79,12 +103,16 @@ This step requires you to iterate through the AP's sorted matches and set up cof
 2) If the SE is near their max number of coffee chats and the current AP already has atleast one coffee chat DO NOT set up a coffee chat. This is so that you can distrubute SE to other AP
 3) Otherwise, If the SE can commit to another coffee chat, DO set up a coffee chat
 
-Future Goals:
+Future Goals:  
 - Allow AP's to rank SE's after Coffee Chats. Instead of just sorting by the number of common Interets, SE's can be moved up or down in the list depending on an AP's rank
 - Add a 'Hobbies' section to SE and AP to better the matching algorithm
 - Increase speed of algorithm by optimzing parts of the algorithm that have a time complexity of O(N^2) 
 
-STEPS TO RUN 
+Running The Code
+=================
+
+## Running Without Changing:
+Below are the steps to run the algorithm using the mock data provide in the data/ directory
 1) In the "/src" folder run setup.py
 $  python .\setup.py
 The setup installs the following packages:
@@ -94,58 +122,30 @@ pip install pytest
 3) In the src folder run main.py
 $ python .\main.py
 
-If you didn't make any changes you should see the following tables:
+If you didn't make any changes you should see the tables as seen in Algorithm Output[#algorithm-output]
 
-Table 1
--------------------------------------------------------------------
------------------ Getting This Weeks Coffee Chats -----------------
--------------------------------------------------------------------
+## Running With Changing:
+Below are the steps to run the algorithm using your own data. 
 
-Date        Aspiring Professional    Senior Executive    Location
-----------  -----------------------  ------------------  ----------
-04/20/2022  Aleema Malik             Aqsa Malik          Online
-04/20/2022  John Doe                 Imaan Khan          Online
-04/19/2022  John Doe                 Simon Gwin          Online
-04/18/2022  Irsah Rasheed            Saba Alrobayi       Online
-04/22/2022  Aguste Mangeney          Abdullah Malik      Online
-04/23/2022  Aguste Mangeney          Roda Liptrot        Online
-04/24/2022  Saad Rasheed             Saba Alrobayi       Online
-04/21/2022  Maaz Mangeney            Alphard Skellern    Online
-
-Table 2
---------------------------------------------------------------------
----------- Getting This Weeks Senior Executive Statistics ----------
---------------------------------------------------------------------
-
-First Name    Last Name    Industry       Frequency    Coffee Chats
-------------  -----------  -----------  -----------  --------------
-Saba          Alrobayi     Health Care            2               2
-Aqsa          Malik        Engineering            3               1
-Abdullah      Malik        Finance                1               1
-Simon         Gwin         Business               1               1
-Alphard       Skellern     Engineering            3               1
-Roda          Liptrot      Finance                1               1
-Imaan         Khan         Business               1               1
-Alexandros    Hebditch     Consulting             0               0
-Brennan       Bellin       Journalism             0               0
-
-STEPS TO RUN ALGORITHM
-If you want to add your own Senior Executive and Aspiring Professionals declare a new objective:
-# In main.py (Malik_Aleema\src\main.py) create as many as Senior Executives and add them  to a list : (Malik_Aleema\src\senior_executive.py)
-senior_executive_list = []
-new_senior_executive = SeniorExecutive(2, 'Faheema', 'Abid', 'Finance', 1, ['interest1', 'interest2'])
-senior_executive_list.append(new_senior_executive)
-# Create as many as Aspiring Professionals and add them  to a list : (Malik_Aleema\src\aspiring_professional.py)
-aspiring_professionals_list = []
-new_aspiring_professionals = AspiringProfessional(1, 'Aleema', 'Malik', 'Consulting', ['interest1', 'interest2', 'interest3'])
-aspiring_professionals_list.append(new_aspiring_professionals)
-# Run the algorithm. It will return a coffee chat object : (Malik_Aleema\src\coffee_chat.py)
-coffee_chats = MAX_algorithm(senior_executive_list,aspiring_professionals_list)
-# To see the contents of the coffee_chat to command line you can use the following method
+1) In main.py (Malik_Aleema\src\main.py) create as many as Senior Executives and add them  to a list : (Malik_Aleema\src\senior_executive.py). 
+senior_executive_list = []      
+new_senior_executive = SeniorExecutive(2, 'Faheema', 'Abid', 'Finance', 1, ['interest1', 'interest2'])    
+senior_executive_list.append(new_senior_executive)   
+2) Create as many as Aspiring Professionals and add them  to a list : (Malik_Aleema\src\aspiring_professional.py).  
+aspiring_professionals_list = []  
+new_aspiring_professionals = AspiringProfessional(1, 'Aleema', 'Malik', 'Consulting', ['interest1', 'interest2', 'interest3'])  
+aspiring_professionals_list.append(new_aspiring_professionals).   
+3) Run the algorithm. It will return a coffee chat object : (Malik_Aleema\src\coffee_chat.py). 
+coffee_chats = MAX_algorithm(senior_executive_list,aspiring_professionals_list). 
+4) To see the contents of the coffee_chat printed in a table format to command line you can use the following method. 
 print_coffee_chats(coffee_chats,senior_executives_list, aspiring_professionals_list)
 
-4) In the tests folder run tests.py to see all the tests
+Testing
+=================
+In the tests folder run tests.py to see all the tests
+```
 $ pytest .\tests.py 
+```
 
 If you didn't make any changes you should see the following:
 ====================================================================== test session starts =======================================================================
