@@ -1,0 +1,37 @@
+Naruto Uzumaki,Engineering, 3
+Sasuke Uchiha,Education, 2
+Kiba Inuzuka,Finance, 2
+Kurenai Yuhi,Journalism, 4
+Rock Lee,Engineering, 4
+Sakura Haruno,Sciences, 3
+Shikamaro Nara,Technology, 1
+Eshaan Humphrey,Business, 7
+Vijay Zimmerman,Accounting, 5
+Jaydon Beasley,Applied Arts/Creatives, 4
+Darnell Goodman,Consulting, 5
+Kiyan Mckenzie,Education, 2
+Kole Sanderson,Engineering, 3
+Kendrick Salter,Entertainment/Performing Arts, 6
+Maaria Conner,Finance, 2
+Cassia Sheridan,Health Care, 5
+Taha Wicks,Journalism, 2
+Lorenzo Thomas,Law/Legal & Government, 1
+Adem Hewitt,Non Profit/Community Building, 3
+Julius Morris,Sciences, 4
+Ibrahim Hail,Social Sciences/Humanities, 2
+Willem Xiong,Technology, 5
+Joseph Laing,Business, 2
+Claire Simon,Accounting, 3
+Koby Terrell,Applied Arts/Creatives, 4
+Zeshan Huynh,Consulting, 4
+Connah Tyler,Education, 1
+Elisha Fischer,Engineering, 6
+Asher Sharma,Entertainment/Performing Arts, 3
+Bentley Humphrey,Finance, 6
+Louisa Craig,Health Care, 4
+Montgomery Weeks,Journalism, 4
+Falak Trevino,Law/Legal & Government, 3
+Beth Gilmour,Non Profit/Community Building, 5
+Shanon Hackett,Sciences, 7
+Dwayne Barber,Social Sciences/Humanities, 5
+Mark Zuckerburg,Technology, 2
